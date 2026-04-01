@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Doctor from '../Doctor/Doctor';
 
@@ -7,6 +7,13 @@ const Doctors = () => {
 
     const data = useLoaderData()
 
+    const [showAll, setShowAll] = useState(false)
+
+    const handleShow = () => {
+        setShowAll(true)
+    }
+
+    const doctorsToShow = showAll ? data : data.slice(0, 6);
 
 
 
@@ -20,9 +27,14 @@ const Doctors = () => {
             <Suspense fallback={<h2>Loading......</h2>}>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-40'>
                     {
-                        data.map((singleDoctor) => <Doctor key={singleDoctor.id} singleDoctor={singleDoctor}></Doctor>)
+                        doctorsToShow.map((singleDoctor) => <Doctor key={singleDoctor.id} singleDoctor={singleDoctor}></Doctor>)
                     }
                 </div>
+                {!showAll && (
+                    <div className='flex justify-center items-center mt-10'>
+                        <button onClick={handleShow} className="btn bg-blue-500 text-white rounded-4xl p-5 ml-5">View All Doctors</button>
+                    </div>
+                )}
             </Suspense>
         </div>
     );
