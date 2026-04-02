@@ -21,17 +21,14 @@ export const router = createBrowserRouter([
                 Component: Home
             },
             {
-                index: true,
                 path: '/My-Booking',
                 Component: MyBookings
             },
             {
-                index: true,
                 path: '/blogs',
                 Component: Blogs
             },
             {
-                index: true,
                 path: '/contact',
                 Component: Contact
             },
