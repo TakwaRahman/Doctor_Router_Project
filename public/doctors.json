@@ -6,7 +6,14 @@
     "education": "MBBS, FCPS (Cardiology)",
     "speciality": "Cardiologist",
     "experience": "10",
-    "registrationNumber": "REG-10001"
+    "registrationNumber": "REG-10001",
+    "workingPlace": "Apollo Hospital",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "consultationFee": "1000 BDT"
   },
   {
     "id": 2,
@@ -15,7 +22,14 @@
     "education": "MBBS, MD (Neurology)",
     "speciality": "Neurologist",
     "experience": "8",
-    "registrationNumber": "REG-10002"
+    "registrationNumber": "REG-10002",
+    "workingPlace": "Islami Bank Hospital",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "consultationFee": "1200 BDT"
   },
   {
     "id": 3,
@@ -24,7 +38,14 @@
     "education": "MBBS, MS (Orthopedics)",
     "speciality": "Orthopedic Surgeon",
     "experience": "12",
-    "registrationNumber": "REG-10003"
+    "registrationNumber": "REG-10003",
+    "workingPlace": "Square Hospital",
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Friday"
+    ],
+    "consultationFee": "1500 BDT"
   },
   {
     "id": 4,
@@ -33,7 +54,14 @@
     "education": "MBBS, FCPS (Gynecology)",
     "speciality": "Gynecologist",
     "experience": "9",
-    "registrationNumber": "REG-10004"
+    "registrationNumber": "REG-10004",
+    "workingPlace": "United Hospital",
+    "availability": [
+      "Wednesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "consultationFee": "1300 BDT"
   },
   {
     "id": 5,
@@ -42,7 +70,14 @@
     "education": "MBBS, MD (Dermatology)",
     "speciality": "Dermatologist",
     "experience": "7",
-    "registrationNumber": "REG-10005"
+    "registrationNumber": "REG-10005",
+    "workingPlace": "Evercare Hospital",
+    "availability": [
+      "Monday",
+      "Thursday",
+      "Friday"
+    ],
+    "consultationFee": "900 BDT"
   },
   {
     "id": 6,
@@ -51,7 +86,14 @@
     "education": "MBBS, FCPS (Pediatrics)",
     "speciality": "Pediatrician",
     "experience": "6",
-    "registrationNumber": "REG-10006"
+    "registrationNumber": "REG-10006",
+    "workingPlace": "Ibn Sina Hospital",
+    "availability": [
+      "Tuesday",
+      "Wednesday",
+      "Saturday"
+    ],
+    "consultationFee": "800 BDT"
   },
   {
     "id": 7,
@@ -60,16 +102,29 @@
     "education": "MBBS, MS (ENT)",
     "speciality": "ENT Specialist",
     "experience": "11",
-    "registrationNumber": "REG-10007"
+    "registrationNumber": "REG-10007",
+    "workingPlace": "Labaid Specialized Hospital",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "consultationFee": "1100 BDT"
   },
   {
     "id": 8,
-    "name": "Dr. Sophia Martinez",
+    "name": "Dr. Emiliano Martinez",
     "image": "https://i.ibb.co.com/C3XP54Gc/Gemini-Generated-Image-t7mefft7mefft7me.png",
     "education": "MBBS, MD (Psychiatry)",
     "speciality": "Psychiatrist",
     "experience": "5",
-    "registrationNumber": "REG-10008"
+    "registrationNumber": "REG-10008",
+    "workingPlace": "Dhaka Medical College Hospital",
+    "availability": [
+      "Tuesday",
+      "Thursday"
+    ],
+    "consultationFee": "950 BDT"
   },
   {
     "id": 9,
@@ -78,7 +133,16 @@
     "education": "MBBS, FCPS (Medicine)",
     "speciality": "General Physician",
     "experience": "13",
-    "registrationNumber": "REG-10009"
+    "registrationNumber": "REG-10009",
+    "workingPlace": "Mitford Hospital",
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "consultationFee": "1000 BDT"
   },
   {
     "id": 10,
@@ -87,7 +151,13 @@
     "education": "MBBS, MS (Ophthalmology)",
     "speciality": "Eye Specialist",
     "experience": "9",
-    "registrationNumber": "REG-10010"
+    "registrationNumber": "REG-10010",
+    "workingPlace": "BIRDEM Hospital",
+    "availability": [
+      "Tuesday",
+      "Thursday"
+    ],
+    "consultationFee": "1200 BDT"
   },
   {
     "id": 11,
@@ -96,7 +166,14 @@
     "education": "MBBS, MD (Urology)",
     "speciality": "Urologist",
     "experience": "14",
-    "registrationNumber": "REG-10011"
+    "registrationNumber": "REG-10011",
+    "workingPlace": "National Institute of Kidney Diseases",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "consultationFee": "1500 BDT"
   },
   {
     "id": 12,
@@ -105,6 +182,12 @@
     "education": "MBBS, FCPS (Oncology)",
     "speciality": "Oncologist",
     "experience": "10",
-    "registrationNumber": "REG-10012"
+    "registrationNumber": "REG-10012",
+    "workingPlace": "NICRH Hospital",
+    "availability": [
+      "Tuesday",
+      "Thursday"
+    ],
+    "consultationFee": "1300 BDT"
   }
 ]
