@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { FaRegRegistered } from "react-icons/fa6";
-
+import { addToStoreDB } from '../utility/addToDB';
+import { Toaster } from 'react-hot-toast';
 
 const DoctorDetails = () => {
 
@@ -18,31 +19,18 @@ const DoctorDetails = () => {
 
     console.log(singleDoctor)
 
-    const doctors = [
-        {
-            "id": 11,
-            "name": "Dr. Natasha Ruby",
-        },
-        {
-            "id": 5,
-            "name": "Dr. Tory nichols",
-        },
-        {
-            "id": 7,
-            "name": "Dr. Roobey Kene",
-        },
-    ]
-
-    const doctor = doctors.find(d => d.id === 5);
-
-    console.log(doctor)
-
     // console.log(singleDoctor)
     if (!singleDoctor) {
         return <p>Page Not Found</p>
     }
 
     const { image, name, education, speciality, consultationFee, experience, availability, registrationNumber, workingPlace } = singleDoctor
+
+
+
+    const handleBookNowDoctor = (id) => {
+        addToStoreDB(id)
+    }
 
 
 
@@ -65,14 +53,14 @@ const DoctorDetails = () => {
                     <p className='pt-2 font-bold'>{workingPlace}</p>
                     <p className='pt-10 flex items-center gap-3'><FaRegRegistered /> Reg No : {registrationNumber}</p>
                     <p className='pt-10'><span className='font-bold mr-3'>Availibility </span>
-                    {
-                        availability.map(available => <span className='badge badge-secondary mr-3 p-4 rounded-4xl'>{available}</span>)
-                    }
+                        {
+                            availability.map(available => <span className='badge badge-secondary mr-3 p-4 rounded-4xl'>{available}</span>)
+                        }
                     </p>
                     <p className="pt-5 font-bold">Consultation Fee : <span className='text-[#176AE5] font-semibold'>{consultationFee}  (incl. Vat) Per consultation</span></p>
                 </div>
             </div>
-            
+
 
             <div className='mt-10 border p-10 bg-white rounded-2xl border-none'>
                 <h1 className='text-2xl font-bold text-center pb-5'>Book an Appointment</h1>
@@ -81,9 +69,12 @@ const DoctorDetails = () => {
                     <h4 className='font-semibold badge bg-green-200 p-5 rounded-full text-green-600'>Doctor Available Today</h4>
                 </div>
                 <div className='text-center mt-10'>
-                    <button className="btn text-white bg-[#176AE5] rounded-full w-full">Book Appointment Now</button>
+                    <button onClick={() => handleBookNowDoctor(id)} className="btn text-white bg-[#176AE5] rounded-full w-full">Book Appointment Now</button>
                 </div>
             </div>
+
+
+            
 
         </div>
     );
